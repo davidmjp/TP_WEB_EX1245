@@ -42,6 +42,11 @@ public class DispatcherServlet extends HttpServlet {
                 RequestDispatcher rd = request.getRequestDispatcher("somme.jsp");
                 rd.forward(request, response);
             }
+            
+            if ( request.getParameter("choixTP").equals("4") ) {
+                RequestDispatcher rd = request.getRequestDispatcher("devinez.jsp");
+                rd.forward(request, response);
+            }
         }
     }
 
