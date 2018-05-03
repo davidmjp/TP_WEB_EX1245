@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 mai 2018, 09:51:24
+    Author     : Formation
+*/
+
+body { 
+    background: linear-gradient(blue, white);
+    background-repeat:no-repeat;
+    font-size: x-large;
+    margin: 20px 100px;
+}
+
+h1, #span1 {
+    color: white;
+    background-color: rgb(255, 192, 0);
+    border-color: rgb(171, 143, 46);
+    border-width: 4px;
+    border-style: solid;
+    text-align: center;
+    padding: 10px;
+}
+
+input {
+    margin: 0px 0px 0px 50px;
+    border-color: black;
+    border-size: 4px;
+    font-size: x-large;
+    box-shadow: 0 2px blue;
+}
+
+input[type="submit"]{
+    cursor:pointer;
+    background-color: rgb(100, 166, 226);
+    border-width: 0px;
+    color: yellow; /* plutôt que rgb(184, 143, 115); */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: x-large;
+}
+
+input:hover { 
+    background-color: activecaption;
+}
+
+#span2 {
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(255, 230, 153);
+    border-color: rgb(89, 120, 149);
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    padding: 10px 100px;
+}
+
+p {
+    display: inline-block;
+}
+p span.gauche {
+    float: left;
+    display: inline-block;
+    color: black;
+    background-color: rgb(164, 179, 222);
+    border-color: rgb(89, 120, 149);
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    padding: 10px 100px;
+    height: 300px;
+    width: 200px;
+}
+p span.droite {
+    float: right;
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(126, 183, 89);
+    border-color: rgb(89, 120, 149);
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    padding: 10px 20px;
+    height: 280px;
+    width: 250px;
+    box-shadow: 6px 6px 6px black;
+}
