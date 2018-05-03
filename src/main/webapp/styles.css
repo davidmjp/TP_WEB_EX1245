@@ -15,6 +15,10 @@ body {
     margin: 20px 100px;
 }
 
+form {
+    display: inline-block;
+}
+
 h1, #span1 {
     color: white;
     background-color: rgb(255, 192, 0);
@@ -65,7 +69,6 @@ p {
 }
 p span.gauche {
     float: left;
-    display: inline-block;
     color: black;
     background-color: rgb(164, 179, 222);
     border-color: rgb(89, 120, 149);
@@ -78,7 +81,6 @@ p span.gauche {
 }
 p span.droite {
     float: right;
-    display: inline-block;
     margin-left: 20px;
     color: white;
     background-color: rgb(126, 183, 89);

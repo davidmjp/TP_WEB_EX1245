@@ -71,7 +71,7 @@
         <br>
         <span id="span2">
             <%
-                if (request.getParameter("new") != null || premiereFois == true || request.getParameter("nombreSaisi") == "") out.print("Devinez ("+nA+")"); // Ne marche pas parce qu'on vient de lui donner une valeur juste au-dessus : session.getAttribute("nA") == null) 
+                if (request.getParameter("new") != null || premiereFois == true || request.getParameter("nombreSaisi") == "") out.print("Devinez"); // Ne marche pas parce qu'on lui a donné une valeur plus haut : session.getAttribute("nA") == null) 
                 else {
                     if (nA > nS) out.print("Plus grand !");
                     if (nA < nS) out.print("Plus petit !");
