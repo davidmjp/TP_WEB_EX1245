@@ -19,11 +19,12 @@
         <form action="agetaille.jsp">
             <label>Votre âge (en années) : </label><input type="text" name="age" size="3">
             <label>Votre taille (en cm) : </label><input type="text" name="taille" size="3">
-            <input type="submit" value="Voir ce que le programme en dit">
+            <br><br><input type="submit" value="Voir ce que le programme en dit">
         </form>
         <br><br>
         
         <%
+        try {
             String ageS, tailleS;
             int age, taille;
 
@@ -42,9 +43,11 @@
                 else if (age == 39 || age == 40 && taille == 183) out.println("Vous vous appelez peut-être David ?");
                 else out.println("Rien à dire pour cet âge avec cette taille.");
             }
-            out.print("</center>");
-            
-            
+            else out.println("Il faut que l'âge et la taille soient supérieurs à zéro.");
+        } catch(Exception e) {
+            out.println(e.getMessage());
+        }
         %>
+        </center>
     </body>
 </html>
